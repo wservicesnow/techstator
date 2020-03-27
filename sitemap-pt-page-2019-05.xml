@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="4.1.0" -->
-<!-- generated-on="March 27, 2020 9:51 pm" -->
+<!-- generated-on="March 27, 2020 10:51 pm" -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
 		<loc>https://techstator.com/privacy-policy/</loc>
 		<lastmod>2020-03-27T11:46:56+00:00</lastmod>
@@ -18,4 +18,4 @@
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
-</urlset><!-- Request ID: 0715fc248b7d29f7c2c445ae254a963d; Queries for sitemap: 2; Total queries: 13; Seconds: 0; Memory for sitemap: 0MB; Total memory: 2MB -->
+</urlset><!-- Request ID: 03cac0952cc7136c06c49f3c8b9982e9; Queries for sitemap: 2; Total queries: 13; Seconds: 0; Memory for sitemap: 0MB; Total memory: 2MB -->
