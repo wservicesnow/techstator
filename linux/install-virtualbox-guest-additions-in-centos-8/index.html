@@ -1,5 +1,4 @@
 
-
 <!doctype html>
 <html lang="en-US">
 <head>
@@ -7,10 +6,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
-	<title>Page not found - TechStator</title>
+	<title>Install VirtualBox Guest Additions in CentOS 8 - TechStator</title>
 
 <!-- This site is optimized with the Yoast SEO plugin v11.2.1 - https://yoast.com/wordpress/plugins/seo/ -->
-<meta name="robots" content="noindex,follow"/>
+<meta name="description" content="As the name itself suggests, we install VBox Guest Additions inside our Guest OS. We would discuss how to install VirtualBox Guest Additions in CentOS 8."/>
+<link rel="canonical" href="https://techstator.com/linux/install-virtualbox-guest-additions-in-centos-8/" />
 <!-- / Yoast SEO plugin. -->
 
 <style id="ct-main-styles-inline-css" type="text/css">:root {
@@ -61,6 +61,7 @@
     --logoMaxHeight: 37px;
     --cardSpacing: 35px;
     --cardBackground: #ffffff;
+    --pageTitleFontHoverColor: var(--paletteColor1);
     --letterSpacing: 0em;
     --fontSize: 20px;
     --textTransform: none;
@@ -69,6 +70,7 @@
     --fontStyle: normal;
     --textDecoration: none;
     --lineHeight: 1.65;
+    --pageTitleFontInitialColor: var(--paletteColor4);
     --cardExcerptSize: 18px;
     --cardsGap: 30px;
     --transparentHeaderBackground: rgba(255, 255, 255, 0.1);
@@ -316,6 +318,16 @@ code, kbd, samp, pre {
     --backgroundColor: #f4f5f8;
 }
 
+.entry-header .page-title {
+    --lineHeight: 1.3;
+    --textDecoration: none;
+    --fontStyle: normal;
+    --fontWeight: 700;
+    --textTransform: none;
+    --fontSize: 34px;
+    --letterSpacing: 0em;
+}
+
 .entry-card .entry-title {
     --lineHeight: 1.3;
     --textDecoration: none;
@@ -559,6 +571,12 @@ h6 {
     --letterSpacing: 0em;
 }
 
+.entry-header .page-title {
+    --lineHeight: 1.3;
+    --fontSize: 25px;
+    --letterSpacing: 0em;
+}
+
 .entry-card .entry-title {
     --lineHeight: 1.3;
     --fontSize: 20px;
@@ -691,6 +709,12 @@ h6 {
     --letterSpacing: 0em;
 }
 
+.entry-header .page-title {
+    --lineHeight: 1.3;
+    --fontSize: 25px;
+    --letterSpacing: 0em;
+}
+
 .entry-card {
     --metaFontSize: 16px;
 }
@@ -724,7 +748,7 @@ code, kbd, samp, pre,
 <link rel='stylesheet' id='ct-style-css'  href='https://techstator.com/wp-content/themes/blocksy/style.css' type='text/css' media='all' />
 <link rel='stylesheet' id='ct-main-styles-css'  href='https://techstator.com/wp-content/themes/blocksy/static/bundle/main.css' type='text/css' media='all' />
 
-<link rel="icon" href="https://techstator.com/wp-content/uploads/2020/03/favicon.ico" sizes="32x32" />
+<link rel="amphtml" href="https://techstator.com/linux/install-virtualbox-guest-additions-in-centos-8/amp/"><link rel="icon" href="https://techstator.com/wp-content/uploads/2020/03/favicon.ico" sizes="32x32" />
 <link rel="icon" href="https://techstator.com/wp-content/uploads/2020/03/favicon.ico" sizes="192x192" />
 <link rel="apple-touch-icon-precomposed" href="https://techstator.com/wp-content/uploads/2020/03/favicon.ico" />
 <meta name="msapplication-TileImage" content="https://techstator.com/wp-content/uploads/2020/03/favicon.ico" />
@@ -754,7 +778,7 @@ code, kbd, samp, pre,
 
 </head>
 
-<body class="error404 logged-in wp-custom-logo ct-loading ct-no-js ct-has-sidebar ct-modern-forms ct-offcanvas header-type-1" >
+<body class="post-template-default single single-post postid-475 single-format-standard wp-custom-logo ct-loading ct-no-js ct-has-sidebar ct-modern-forms ct-offcanvas header-type-1" >
 <div id="main-container">
 
 	<header
@@ -787,9 +811,9 @@ code, kbd, samp, pre,
 				>
 
 		<ul id="primary-menu" class="primary-menu menu"><li id="menu-item-52" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-52"><a href="https://techstator.com">Home</a></li>
-<li id="menu-item-19" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-19"><a href="https://techstator.com/linux/">Linux<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
+<li id="menu-item-19" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-19"><a href="https://techstator.com/linux/">Linux<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
 <ul class="sub-menu">
-	<li id="menu-item-470" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-470"><a href="https://techstator.com/linux/centos/">CentOS</a></li>
+	<li id="menu-item-470" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-470"><a href="https://techstator.com/linux/centos/">CentOS</a></li>
 </ul>
 </li>
 <li id="menu-item-20" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-20"><a href="https://techstator.com/programming/">Programming</a></li>
@@ -851,25 +875,122 @@ code, kbd, samp, pre,
 	<main id="main" class="site-main">
 
 		
+
+	
 	<div id="primary" class="content-area">
-		<div class="ct-container">
 
-			<section class="error-404 not-found">
-				<header class="page-header">
-					<h1 class="page-title">
-						Oops! That page can&rsquo;t be found.					</h1>
-				</header>
+		<div class="ct-container" data-sidebar="right">
 
-				<div class="page-content">
-					<p>
-						It looks like nothing was found at this location.</p>
+			<section>
+				
+	<article
+		id="post-475"
+		class="post-475 post type-post status-publish format-standard has-post-thumbnail hentry category-centos category-linux"		data-content="boxed"				>
+
+		
+		<section class="hero-section" data-type="type-1" data-alignment="left">
+			<header class="entry-header">
+				<h1 class="page-title">Install VirtualBox Guest Additions in CentOS 8</h1>
+				<div class="entry-meta has-avatar" data-label data-type="simple">
+		
+			<ul >
+				
+							<li class="ct-meta-author" >
 
 					
+											<span class="ct-meta-label">
+							By						</span>
+					
+					<span class="ct-meta-element" >
+						<a href="https://techstator.com/author/editorialteam/" title="Posts by Editorial Team" rel="author">Editorial Team</a>					</span>
+				</li>
+			
+							<li
+					class="ct-meta-date"
+					>
+
+					
+											<span class="ct-meta-label">
+							On						</span>
+					
+					<span
+						class="ct-meta-element"
+						>
+						Mar 27, 2020					</span>
+				</li>
+			
+			
+			<li class="ct-meta-categories" data-type="simple"><span class="ct-meta-label">In </span><span class="ct-meta-element"><a href="https://techstator.com/linux/centos/" rel="tag">CentOS</a> </span><span class="ct-meta-element"><a href="https://techstator.com/linux/" rel="tag">Linux</a></span></li>					</ul>
 				</div>
-			</section>
+		
+					</header>
+		</section>
+
+		<figure class="ct-featured-image ct-hidden-sm" ><div class="ct-image-container ct-lazy" ><img class="attachment-full size-full" alt="Install VirtualBox Guest Additions in CentOS 8" data-lazy="https://techstator.com/wp-content/uploads/2020/03/Install-VirtualBox-Guest-Additions-in-CentOS-8.svg" data-object-fit="~" /><noscript><img src="https://techstator.com/wp-content/uploads/2020/03/Install-VirtualBox-Guest-Additions-in-CentOS-8.svg" class="attachment-full size-full" alt="Install VirtualBox Guest Additions in CentOS 8" /></noscript><div class="ct-ratio" style="padding-bottom: 56.3%"></div></div></figure>
+		
+		<div class="entry-content">
+			<p style="text-align: justify;">In this article, we would discuss how to <strong>install VirtualBox Guest Additions in CentOS 8</strong>. As the name itself suggests, we install VirtualBox Guest Additions <strong>inside our Guest operating system</strong>. Prior to that, we need to download the VirtualBox Guest Additions <strong>ISO image</strong>. The ISO image version should match with the VirtualBox version installed. Otherwise, it may not work as intended.</p>
+<p style="text-align: justify;">If we are on Ubuntu host OS, then we can use VirtualBox Guest Additions ISO image through two methods &#8211;</p>
+<ol>
+<li style="text-align: justify;">Using option, <strong>Insert Guest Additions CD image</strong> &#8211; in case we have installed the package through standard Ubuntu repository.
+<pre>sudo apt install virtualbox-guest-additions-iso</pre>
+</li>
+<li style="text-align: justify;">or, downloading the ISO image and then <strong>mount it through VirtualBox as an ISO</strong>. Menu bar &#8211;&gt; Devices &#8211;&gt; Optical Drives &#8211;&gt; Choose a disk file&#8230;</li>
+</ol>
+<p style="text-align: justify;">VirtualBox Guest Additions help us with <strong>improved functionality</strong> inside our Guest OS. We can share folder/clipboard between host and guest, integrate mouse pointer, better video support etc.</p>
+<p style="text-align: justify;"><strong>Note:</strong> We believe you already have superuser privileges for the operations mentioned below. Otherwise, contact your System Administrator for assistance.</p>
+<h5 style="text-align: center;">Install VirtualBox Guest Additions in CentOS 8</h5>
+<p style="text-align: justify;">First, <strong>login</strong> as root/superuser &#8211;</p>
+<pre>su -l</pre>
+<p style="text-align: justify;">or, use <strong>sudo</strong> before all superuser commands.</p>
+<p style="text-align: justify;">Next, we have to install few essential packages (these packages are available through BaseOS and AppStream repository) &#8211;</p>
+<pre>yum install tar bzip2 kernel-devel.x86_64 kernel-headers perl gcc make elfutils-libelf-devel.x86_64</pre>
+<p style="text-align: justify;">As we have already discussed, either load the Guest Additions ISO image using optical drive or through Insert Guest Additions CD image method. Now, we need to mount the ISO image. Issue the following in terminal &#8211;</p>
+<pre>mount /dev/cdrom /media</pre>
+<p style="text-align: justify;">Thereafter,</p>
+<pre>cd /media/</pre>
+<p style="text-align: justify;">Lastly, to install VirtualBox Guest Additions &#8211;</p>
+<pre>./VBoxLinuxAdditions.run</pre>
+<p style="text-align: justify;"><strong>Important:</strong> If you will try to run following command with sudo &#8211;</p>
+<pre>sudo ./VBoxLinuxAdditions.run</pre>
+<p style="text-align: justify;">then, it will throw an error &#8211;</p>
+<pre>sudo: ./VBoxLinuxAdditions.run: command not found</pre>
+<p style="text-align: justify;">Under such a scenario, we need to use <strong>sh</strong> command-line utility to install VirtualBox Guest Additions. Therefore,</p>
+<pre>sudo sh VBoxLinuxAdditions.run</pre>
+<p style="text-align: justify;">This would get the job done.</p>
+<p style="text-align: justify;">VirtualBox Guest Additions are now installed and we need to restart our guest OS for changes to take effect.</p>
+<p style="text-align: justify;"><strong>In conclusion</strong>, we have discussed how to install VirtualBox Guest Additions in CentOS 8 release.</p>
+		</div>
+
+		
+		
+		
+	</article>
+
+				</section>
+
+			
+<aside
+	class="ct-hidden-sm ct-hidden-md"    data-type="type-2"
+	>
+
+    <div
+		class="ct-sidebar" data-sticky		data-widgets="separated">
+				<div class="ct-widget widget_recent_entries">		<h2 class="widget-title">Recent Posts</h2>		<ul>
+											<li>
+					<a href="https://techstator.com/linux/install-virtualbox-guest-additions-in-centos-8/">Install VirtualBox Guest Additions in CentOS 8</a>
+									</li>
+					</ul>
+		</div>	</div>
+</aside>
+
 
 		</div>
+
 	</div>
+
+	
+
 
 
 	</main>
@@ -924,6 +1045,29 @@ code, kbd, samp, pre,
 
 		<div class="ct-bag-content" data-align="middle">
 			
+<form role="search" method="get" class="search-form" action="https://techstator.com/">
+	<div class="ct-search-input">
+		<input type="search" class="search-field" placeholder="Search" value="" name="s" autocomplete="off" />
+
+		<button class="search-submit">
+			<i>
+				<svg
+					width="12px"
+					height="12px"
+					viewBox="0 0 24 24">
+
+					<path d="M23.3,23.3c-0.9,0.9-2.3,0.9-3.2,0l-4-4c-1.6,1-3.6,1.7-5.7,1.7C4.7,21,0,16.3,0,10.5S4.7,0,10.5,0C16.3,0,21,4.7,21,10.5
+					c0,2.1-0.6,4-1.7,5.7l4,4C24.2,21,24.2,22.5,23.3,23.3z M10.5,3C6.4,3,3,6.4,3,10.5S6.4,18,10.5,18c4.1,0,7.5-3.4,7.5-7.5
+					C18,6.4,14.7,3,10.5,3z"/>
+				</svg>
+			</i>
+
+			<span data-loader="circles"><span></span><span></span><span></span></span>
+		</button>
+	</div>
+</form>
+
+
 		</div>
 	</div>
 </div>
@@ -942,9 +1086,9 @@ code, kbd, samp, pre,
 			<div class="ct-bag-content" >
 				
 				<ul id="primary-menu" class="mobile-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-52"><a href="https://techstator.com">Home</a></li>
-<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-19"><a href="https://techstator.com/linux/">Linux<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-19"><a href="https://techstator.com/linux/">Linux<span class="menu-arrow"><svg width="8" height="8" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg></span></a>
 <ul class="sub-menu">
-	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-470"><a href="https://techstator.com/linux/centos/">CentOS</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-470"><a href="https://techstator.com/linux/centos/">CentOS</a></li>
 </ul>
 </li>
 <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-20"><a href="https://techstator.com/programming/">Programming</a></li>
